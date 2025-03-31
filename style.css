@@ -42,25 +42,25 @@ header {
 }
 /* ปรับขนาดของปุ่ม navbar-toggler */
 .navbar-toggler {
-font-size: 1.5rem; /* ปรับขนาดของข้อความในปุ่ม */
-padding: 10px 10px; /* เพิ่มพื้นที่ภายในปุ่ม */
-border-radius: 5px; /* ปรับมุมปุ่มให้โค้ง */
+    font-size: 1.5rem; /* ปรับขนาดของข้อความในปุ่ม */
+    padding: 10px 10px; /* เพิ่มพื้นที่ภายในปุ่ม */
+    border-radius: 5px; /* ปรับมุมปุ่มให้โค้ง */
 }
 
 /* ปรับขนาดไอคอนของ navbar-toggler */
 .navbar-toggler-icon {
-width: 10px; /* ปรับความกว้างของไอคอน */
-height: 10px; /* ปรับความสูงของไอคอน */
+    width: 10px; /* ปรับความกว้างของไอคอน */
+    height: 10px; /* ปรับความสูงของไอคอน */
 }
 
-.container {
+/* .container {
 display: grid;
 gap: 50px;
 grid-template-columns: repeat(4, 1fr);
 background-color: none;
 padding: 20px;
-}
-
+} */
+/* 
 .container > div {
 background-color: #f1f1f1;
 border: 1px solid black;
@@ -69,18 +69,18 @@ font-size: 20px;
 text-align: center;
 border-radius: 15%;
 }
-.box {
-display: flex;
+.box { */
+/* display: flex;
 flex-direction: initial;
-justify-content: flex-end;
+justify-content: flex-end; */
 /* align-items: center; */
-background-color: none;
+/* background-color: none;
 border: 1px solid black;
 padding: 20px;
 height: 200px;
-word-wrap: break-word;
+word-wrap: break-word; */
 /* font-size: 20px; */
-border-radius: 20px;
+/* border-radius: 20px;
 }
 .box p {
 margin-top: 10px;
@@ -88,7 +88,7 @@ margin-top: 10px;
 
 p.justify {
     text-align: justify;
-}
+} */
 
 .grid-container {
 display: grid;
