@@ -1,0 +1,126 @@
+.caorosel-item {
+    height: 500px;
+}
+.caorosel-image-1 {
+    background-image: url('https://www.w3schools.com/bootstrap/ny.jpg'); 
+    background-size: cover;
+}
+
+body {
+    background-color: #FFFAE2;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #5A6C32;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.top-nav {
+    float: left;
+    display: inline;
+    background-color: #FFFAE2;
+}
+#service {
+    padding: 50px 0;
+    background-color: #5A6C32;
+}
+.custom-box {
+    background-color:none;
+    padding: 40px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.no-border {
+    border: none;
+    background: none;
+    padding: auto;
+}
+/* ปรับขนาดของปุ่ม navbar-toggler */
+.navbar-toggler {
+font-size: 1.5rem; /* ปรับขนาดของข้อความในปุ่ม */
+padding: 10px 10px; /* เพิ่มพื้นที่ภายในปุ่ม */
+border-radius: 5px; /* ปรับมุมปุ่มให้โค้ง */
+}
+
+/* ปรับขนาดไอคอนของ navbar-toggler */
+.navbar-toggler-icon {
+width: 10px; /* ปรับความกว้างของไอคอน */
+height: 10px; /* ปรับความสูงของไอคอน */
+}
+
+.container {
+display: grid;
+gap: 50px;
+grid-template-columns: repeat(4, 1fr);
+background-color: none;
+padding: 20px;
+}
+
+.container > div {
+background-color: #f1f1f1;
+border: 1px solid black;
+padding: 80px 100px;
+font-size: 20px;
+text-align: center;
+border-radius: 15%;
+}
+.box {
+display: flex;
+flex-direction: initial;
+justify-content: flex-end;
+/* align-items: center; */
+background-color: none;
+border: 1px solid black;
+padding: 20px;
+height: 200px;
+word-wrap: break-word;
+/* font-size: 20px; */
+border-radius: 20px;
+}
+.box p {
+margin-top: 10px;
+}
+
+p.justify {
+    text-align: justify;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 10px;
+background-color: white;
+padding: 10px;
+border-radius: 20px;
+}
+
+
+.grid-container > div {
+width: 50px;
+  height: 50px;
+background-color: none;
+text-align: center;
+padding: 10px;
+font-size: 30px;
+}
+
+
+.item1 {
+grid-row: 1 / span 2;
+}
+@media screen and (max-width: 992px) {
+.container {
+grid-template-columns: repeat(2, 1fr); /* เมื่อหน้าจอเล็กลง, จะมี 2 คอลัมน์ */
+}
+}
+
+@media screen and (max-width: 600px) {
+.container {
+grid-template-columns: 1fr; /* เมื่อหน้าจอเล็กลงมาก, จะมี 1 คอลัมน์ */
+}
+}    
