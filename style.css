@@ -7,19 +7,50 @@
 }
 
 body {
-    background-color: #FFFAE2;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 header {
-    background-color: #5A6C32;
+    background-color: #22303f;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem; 
+    font-weight: bold; 
+    padding: 12px 25px; 
+    border-radius: 25px; 
+    transition: all 0.3s ease; 
+    text-transform: uppercase; 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #607EA2; 
+    color: white; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar-nav .nav-item .nav-link.btn-success {
+    background-color: #2da0a8; 
+    border: none; 
+}
+
+
+.navbar-nav .nav-item .nav-link.nav-link.btn-success:hover {
+    background-color: #2da0a8; 
+    border: none; 
+}
+
+.navbar-nav .nav-item .nav-link.nav-link.btn-success:hover {
+    background-color: #254464; 
+}
+
 .top-nav {
     float: left;
     display: inline;
@@ -27,7 +58,7 @@ header {
 }
 #service {
     padding: 50px 0;
-    background-color: #5A6C32;
+    background: linear-gradient(to right, #5c6bc0, #2da0a8);
 }
 .custom-box {
     background-color:none;
@@ -40,17 +71,17 @@ header {
     background: none;
     padding: auto;
 }
-/* ปรับขนาดของปุ่ม navbar-toggler */
+
+
 .navbar-toggler {
-font-size: 1.5rem; /* ปรับขนาดของข้อความในปุ่ม */
-padding: 10px 10px; /* เพิ่มพื้นที่ภายในปุ่ม */
-border-radius: 5px; /* ปรับมุมปุ่มให้โค้ง */
+font-size: 1.5rem; 
+padding: 10px 10px; 
+border-radius: 5px; 
 }
 
-/* ปรับขนาดไอคอนของ navbar-toggler */
 .navbar-toggler-icon {
-width: 10px; /* ปรับความกว้างของไอคอน */
-height: 10px; /* ปรับความสูงของไอคอน */
+width: 10px; 
+height: 10px; 
 }
 
 .container {
@@ -115,12 +146,29 @@ grid-row: 1 / span 2;
 }
 @media screen and (max-width: 992px) {
 .container {
-grid-template-columns: repeat(2, 1fr); /* เมื่อหน้าจอเล็กลง, จะมี 2 คอลัมน์ */
+grid-template-columns: repeat(2, 1fr); 
 }
 }
 
 @media screen and (max-width: 600px) {
 .container {
-grid-template-columns: 1fr; /* เมื่อหน้าจอเล็กลงมาก, จะมี 1 คอลัมน์ */
+grid-template-columns: 1fr; 
 }
-}    
+}
+.navbar-brand {
+    font-size: 2rem; 
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem; 
+    }
+}
+
