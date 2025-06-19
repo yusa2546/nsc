@@ -172,7 +172,7 @@ a:hover {
       font-weight: 700;
       font-size: 1.6rem;
       margin-bottom: 2rem;
-      color: #2F584A;
+      color: #375945;
     }
 
     /* Caregiver cards */
@@ -205,7 +205,7 @@ a:hover {
     }
     .caregiver-header .verified-badge {
       font-size: 0.75rem;
-      background-color: #2F584A;
+      background-color: #375945;
       color: white;
       padding: 2px 8px;
       border-radius: 12px;
@@ -228,7 +228,7 @@ a:hover {
       margin-bottom: 0.6rem;
     }
     .tag {
-      background-color: #2F584A;
+      background-color: #375945;
       padding: 3px 8px;
       border-radius: 12px;
       user-select: none;
@@ -245,7 +245,7 @@ a:hover {
 
     .review-section {
       font-size: 0.85rem;
-      color: #2F584A;
+      color: #234939;
       font-weight: 600;
       user-select: none;
       display: flex;
@@ -268,7 +268,7 @@ a:hover {
       justify-content: center;
     }
     .review-card {
-      background-color: #2F584A;
+      background-color: #375945;
       color: white;
       padding: 1rem 1.5rem;
       border-radius: 30px;
@@ -317,7 +317,7 @@ a:hover {
     }
     footer a {
       margin: 0 1rem;
-      color: #2F584A;
+      color: #234939;
       text-decoration: none;
       font-weight: 600;
     }
