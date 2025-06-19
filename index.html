@@ -1,99 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Care</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Health Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <a class="navbar-brand" href="#">Health care</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav d-flex flex-row">
-                <li class="nav-item btn text-dark">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item btn text-dark">
-                    <a class="nav-link" href="#">On-Demand</a>
-                </li>
-                <li class="nav-item btn text-dark">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item btn text-dark">
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-                <li class="nav-item btn text-dark">
-                    <a class="nav-link" href="#">Biog</a>
-                </li>
-            </ul>
-    
-            <!-- ปุ่ม Login, Sign up และ สมัครงาน ฝั่งขวา -->
-            <ul class="navbar-nav ms-auto d-flex flex-row">
-                <li class="nav-item ms-2">
-                    <a class="nav-link btn btn-success text-white" href="login.html">Login</a>
-                </li>
-                <li class="nav-item ms-2">
-                    <a class="nav-link btn btn-success text-white" href="signup.html">register</a>
-                </li>
-                <li class="nav-item ms-2">
-                    <a class="nav-link btn btn-success text-white" href="apply.html">สมัครงาน</a>
-                </li>
-            </ul>
-            
-        </div>
-    </nav>
-    
 
-    <section id="slider">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-transparent">
+  <div class="container">
+    <a class="navbar-brand" href="#">Health care</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+      aria-controls="navMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                    <div class="custom-box">
-                        <div class="grid-container text-dark">
-                            
-                            <p>Professional Elderly Care for Your Family's Happiness</p>   
-                        </div>
-                    </div>
-                    
-                    
-                    <div><img src="images/nsc.jpg" alt="Health Care" width="300"></div>
-                <div class="custom-box">
-                    <div class="grid-container text-dark">
-                        <p>We carefully select and screen our caregivers to ensure that the person caring for your loved ones is the very best</p>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="service">
-        <div class="text-center text-white">
-            <p style="font-size: 300%;">Supports specialized elderly care services</p>
-        </div>
-        
-<div class="container">
-    <div class="box">
-        <p>ดูแลทั่วไป (ช่วยเหลือกิจวัตรประจำวัน)</p>
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Find a Caregiver</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Become a Caregiver</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
-    
-    <div class="box">
-        <p>ดูแลผู้ป่วยติดเตียง</p>
+
+    <a href="#" class="btn-login-signup" title="Login / Sign Up">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px;" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+      </svg>
+      Login / Sign Up
+    </a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="mb-5">
+  <div class="text-content">
+    <h2>Elderly Caregivers Made Easy,<br />Just a Tap Away</h2>
+    <p class="subtitle">หาผู้ดูแลผู้สูงอายุได้ง่าย ๆ แค่แค่ครั้งเดียว</p>
+    <div class="btn-group">
+      <a href="#" class="btn-register">Register as a caregiver</a>
+      <a href="#" class="btn-find">Find a caregiver</a>
     </div>
-    <div class="box">
-        <p>ดูแลผู้สูงอายุที่มีภาวะสมองเสื่อม</p>
+  </div>
+  <img src="/mnt/data/6db7c4dc-522f-4865-90f7-252782cc1c3c.png" alt="Caregiver Image" />
+</section>
+
+<!-- Trusted Caregiver Section -->
+<section id="trusted" class="mb-5">
+  <div class="text-left">
+    <p><strong>Find Trusted Caregivers for<br />the Elderly and Disabled – Easy and Secure</strong></p>
+    <p>Our platform connects you with professional caregivers who have been thoroughly verified. With real reviews and transparent profile information, you can confidently make your choice every step of the way.</p>
+  </div>
+  <div class="divider"></div>
+  <div class="review-score">
+    4.5<br />
+    <div class="review-star">★</div>
+    Review
+  </div>
+</section>
+
+<!-- Find a Caregiver Section -->
+<section id="find-caregiver">
+  <h3>Find a Caregiver</h3>
+
+  <div class="d-flex flex-wrap justify-content-center gap-4">
+    <!-- Caregiver card 1 -->
+    <div class="caregiver-card">
+      <div class="caregiver-header">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Miss Pimjai Boonraksa" />
+        <div class="name">Miss Pimjai Boonraksa</div>
+        <div class="verified-badge" title="Verified identity badge">✔️ Verified identity Badge</div>
+      </div>
+      <div class="caregiver-details">
+        Experience : Has 6 years of experience caring for elderly and disabled individuals.<br />
+        Education : Bachelor’s degree in Public Health, Chiang Mai Rajabhat University
+      </div>
+      <div class="tags">
+        <span class="tag light">Elderly care</span>
+        <span class="tag light">Light housekeeping</span>
+      </div>
+      <div class="review-section">
+        <span class="tag parttime">Part-time Caregiver</span>
+        <span> | Review 5 </span>
+        <span class="stars">★★★★★</span>
+      </div>
     </div>
-    <div class="box">
-        <p>ดูแลฟื้นฟูหลังผ่าตัด</p>
+
+    <!-- Caregiver card 2 -->
+    <div class="caregiver-card">
+      <div class="caregiver-header">
+        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Mr. Anan Suksom" />
+        <div class="name">Mr. Anan Suksom</div>
+        <div class="verified-badge" title="Verified identity badge">✔️ Verified identity Badge</div>
+      </div>
+      <div class="caregiver-details">
+        Experience : Over 5 years of experience in community health and elderly care.<br />
+        Education : Bachelor’s degree in Public Health, Chiang Mai Rajabhat University
+      </div>
+      <div class="tags">
+        <span class="tag light">Elderly care</span>
+        <span class="tag light">Light housekeeping</span>
+      </div>
+      <div class="review-section">
+        <span class="tag fulltime">Full-time Caregiver</span>
+        <span> | Review 5 </span>
+        <span class="stars">★★★★★</span>
+      </div>
     </div>
-</div>
-        </div>
-    </section>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews">
+  <div class="review-card">
+    <div class="date">Date: May 16, 2025</div>
+    <div class="name">Khun Siriporn</div>
+    <div class="stars">★★★★★</div>
+    <div class="text">
+      Review : Polite, punctual, and caring. My father felt truly comfortable.
+    </div>
+  </div>
+  <div class="review-card">
+    <div class="date">Date: May 16, 2025</div>
+    <div class="name">Mr. Nattapong</div>
+    <div class="stars">★★★★★</div>
+    <div class="text">
+      Review : Very professional and kind. My mother was well taken care of.
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <a href="#">About Us</a>
+  <a href="#">Our Services</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Contact Us</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

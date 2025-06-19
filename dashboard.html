@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caregiver Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+    <!-- Summary Cards -->
+    <div class="col-span-1 lg:col-span-3 grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="bg-blue-100 p-4 rounded-2xl shadow">
+        <div class="text-sm text-gray-600">งานทั้งหมดที่รับ</div>
+        <div class="text-xl font-bold">25 งาน</div>
+      </div>
+      <div class="bg-yellow-100 p-4 rounded-2xl shadow">
+        <div class="text-sm text-gray-600">งานที่กำลังดำเนินการ</div>
+        <div class="text-xl font-bold">4 งาน</div>
+      </div>
+      <div class="bg-green-100 p-4 rounded-2xl shadow">
+        <div class="text-sm text-gray-600">งานที่เสร็จสมบูรณ์</div>
+        <div class="text-xl font-bold">19 งาน</div>
+      </div>
+      <div class="bg-red-100 p-4 rounded-2xl shadow">
+        <div class="text-sm text-gray-600">งานที่มีปัญหา</div>
+        <div class="text-xl font-bold">2 งาน</div>
+      </div>
+    </div>
+
+    <!-- Recent Activities -->
+    <div class="col-span-2 bg-white rounded-xl shadow p-4">
+      <h2 class="text-lg font-semibold mb-4">กิจกรรมล่าสุด</h2>
+      <ul class="space-y-3 text-sm text-gray-700">
+        <li>📬 ได้รับข้อเสนองานใหม่จากคุณธีรพล</li>
+        <li>✅ ตอบรับงาน: ดูแลผู้สูงอายุ (ดอนเมือง)</li>
+        <li>📝 อัปเดตโปรไฟล์เรียบร้อย</li>
+        <li>💬 ข้อความใหม่จากคุณวรรณา</li>
+        <li>⭐ ได้รับรีวิว 5 ดาวจากคุณสมศรี</li>
+      </ul>
+    </div>
+
+    <!-- Notifications -->
+    <div class="bg-white rounded-xl shadow p-4">
+      <h2 class="text-lg font-semibold mb-4">การแจ้งเตือน</h2>
+      <ul class="space-y-2 text-sm text-gray-700">
+        <li>🔔 งานใหม่ที่ตรงกับโปรไฟล์ของคุณ</li>
+        <li>📅 งานวันนี้: ดูแลผู้ป่วย (09:00 - 17:00)</li>
+        <li>📩 ข้อความรอการตอบกลับ 2 รายการ</li>
+        <li>⚠️ โปรดตรวจสอบรีวิวล่าสุด</li>
+      </ul>
+    </div>
+
+    <!-- Work Chart -->
+    <div class="col-span-3 bg-white rounded-xl shadow p-4 mt-4">
+      <h2 class="text-lg font-semibold mb-4">สถิติงานที่รับในแต่ละเดือน</h2>
+      <canvas id="jobChart" height="100"></canvas>
+    </div>
+
+  </div>
+
+  <script>
+    const ctx = document.getElementById('jobChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.'],
+        datasets: [{
+          label: 'จำนวนงานที่รับ',
+          data: [2, 4, 3, 5, 6, 5],
+          borderColor: 'rgba(59, 130, 246, 1)',
+          backgroundColor: 'rgba(59, 130, 246, 0.2)',
+          tension: 0.4,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true
+          },
+          title: {
+            display: true,
+            text: 'จำนวนงานที่รับในแต่ละเดือน'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

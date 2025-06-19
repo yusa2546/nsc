@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open login.html",
-            "file": "d:\\nsc\\login.html"
+            "name": "Open index.html",
+            "file": "d:\\nsc\\index.html"
         }
     ]
 }
